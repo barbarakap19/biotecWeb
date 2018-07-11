@@ -14,13 +14,15 @@ import {MatButtonModule, MatCheckboxModule, MatCardModule, MatFormFieldModule, M
 import 'hammerjs';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AreaDeConhecimentoComponent } from './area-de-conhecimento/area-de-conhecimento.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     CarouselComponent,
-    AreaDeConhecimentoComponent
+    AreaDeConhecimentoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
