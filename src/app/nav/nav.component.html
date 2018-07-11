@@ -1,0 +1,178 @@
+
+<!--Main Navigation-->
+<header>
+
+  <!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light">
+
+  <!-- Navbar brand -->
+  <logo><a class="navbar-brand" href="#">
+    <img src="assets/img/cropped-BioTec-Horizontal.png" height="50" class="d-inline-block align-top" alt="">
+</a></logo>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbWavesEffect>Navegar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light" mdbWavesEffect>Ajuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Contato</a>
+      </li>
+          
+          
+          <!-- Dropdown -->
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              Idioma<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#"><img src="assets/img/Bandeira_do_Brasil.png" height="20" class="d-inline-block align-top" alt="">Português</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#"><img src="assets/img/us.png" height="20" class="d-inline-block align-top" alt="">English</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#"><img src="assets/img/es.png" height="20" class="d-inline-block align-top" alt="">Espanhol</a>
+                  
+              </div>
+          </li>
+
+      </ul>
+      <!-- Links -->
+
+<!-- botão login -->
+<!-- Split button -->
+<button type="button" class="btn btn-blue-grey waves-light" (click)="form.show()" mdbWavesEffect>Login</button>
+<!--Modal: Login Form-->
+<div mdbModal #form="mdb-modal" class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header light-blue darken-3 white-text">
+                <h4 class="title"><i class="fa fa-user"></i> Log in</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="form.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input mdbInputDirective type="text" id="form30" class="form-control">
+                    <label for="form30">Seu e-mail</label>
+                </div>
+
+                <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input mdbInputDirective type="password" id="form31" class="form-control">
+                    <label for="form31">Sua senha</label>
+                </div>
+
+                <div class="text-center mt-2">
+                    <button class="btn btn-info waves-light" mdbWavesEffect>Log in <i class="fa fa-sign-in ml-1"></i></button>
+                </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                    <p>Not a member? <a href="#">Sign Up</a></p>
+                    <p>Forgot <a href="#">Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info ml-auto" data-dismiss="modal" (click)="form.hide()" mdbWavesEffect>Close</button>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login Form-->
+
+<!--Cadastro-->
+<button type="button" class="btn btn-blue-grey relative waves-light" (click)="basicModal.show()" mdbWavesEffect>Registrar</button>
+
+<div mdbModal #basicModal="mdb-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header light-blue darken-3 white-text">
+                <h4 class="title"><i class="fa fa-user-plus"></i> Registro</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="form.hide()">
+                    <span  aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect><i class="fas fa-times" style="color: white"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                 <!--Body-->
+            <div class="modal-body">
+                <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input mdbInputDirective type="text" id="form30" class="form-control">
+                    <label for="form30">Seu e-mail</label>
+                </div>
+
+                <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input mdbInputDirective type="password" id="form31" class="form-control">
+                    <label for="form31">Sua senha</label>
+                </div>
+
+                <div class="text-center mt-2">
+                    <button class="btn btn-info waves-light" mdbWavesEffect>Sign up<i class="fa fa-sign-in ml-1"></i></button>
+                </div>
+
+            </div>
+            </div>
+            <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                    <p>Already have an account? <a href="#">Log In</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info ml-auto" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</links>
+ 
+
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+  <!-- Intro Section
+    <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg);">
+      <div class="full-bg-img mask rgba-black-light">
+          <div class="container flex-center">
+              <div class="row pt-5 mt-3 w-100">
+                  <div class="col-md-12">
+                      <div class="text-center">
+                          <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Banco da Biodiversidade Amazônica</strong></h2>
+                                                    
+                      </div>
+                      
+                    <div class="md-form input-group">
+                      <input type="search" class="form-control" placeholder="Pesquisar...">
+                      <div class="input-group-btn">
+                          <button class="btn btn-blue-grey waves-light btn-lg waves-light" type="button" mdbWavesEffect>Buscar</button>
+                      </div>
+                      
+                    </div>
+                    <a class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.2s"><strong>Busca Avançada</strong></a>
+                  </div>
+                  
+                  
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+  
+</header>
+Main Navigation-->
