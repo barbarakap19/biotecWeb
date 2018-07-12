@@ -15,6 +15,7 @@ import 'hammerjs';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AreaDeConhecimentoComponent } from './area-de-conhecimento/area-de-conhecimento.component';
 import { FooterComponent } from './footer/footer.component';
+import { SegmentosComponent } from './segmentos/segmentos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     CarouselComponent,
     AreaDeConhecimentoComponent,
-    FooterComponent
+    FooterComponent,
+    SegmentosComponent
   ],
   imports: [
     BrowserModule,
