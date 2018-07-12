@@ -6,25 +6,31 @@ import { AppComponent } from './app.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
-import { NavComponent } from './nav/nav.component';
+
 
 
 import {MatButtonModule, MatCheckboxModule, MatCardModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatChipsModule} from '@angular/material';
 
 import 'hammerjs';
-import { CarouselComponent } from './carousel/carousel.component';
-import { AreaDeConhecimentoComponent } from './area-de-conhecimento/area-de-conhecimento.component';
+
 import { FooterComponent } from './footer/footer.component';
 import { SegmentosComponent } from './segmentos/segmentos.component';
+import { RouterModule, Routes } from '../../node_modules/@angular/router';
+import { HomeComponent } from './home/home.component';
+
+const appRoutes: Routes = [
+{
+  path: 'segmentos', component: SegmentosComponent
+}
+
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
-    CarouselComponent,
-    AreaDeConhecimentoComponent,
     FooterComponent,
-    SegmentosComponent
+    SegmentosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,11 @@ import { SegmentosComponent } from './segmentos/segmentos.component';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatChipsModule
+    MatChipsModule,
+    RouterModule.forRoot(appRoutes)
+    
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
