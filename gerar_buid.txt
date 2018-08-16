@@ -1,0 +1,1 @@
+ng build --prod --base-href=http://104.237.139.21/biotec/index.html
