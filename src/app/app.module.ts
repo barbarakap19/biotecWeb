@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SegmentosComponent } from './segmentos/segmentos.component';
 import { RouterModule, Routes } from '../../node_modules/@angular/router';
 import { HomeComponent } from './home/home.component';
+import { MatrizEnsaiosComponent } from './matriz-ensaios/matriz-ensaios.component';
 
 const appRoutes: Routes = [
 {
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     AppComponent,
     FooterComponent,
     SegmentosComponent,
-    HomeComponent
+    HomeComponent,
+    MatrizEnsaiosComponent
   ],
   imports: [
     BrowserModule,
