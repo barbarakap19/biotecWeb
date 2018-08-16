@@ -144,36 +144,43 @@
 
   <!-- Inicio do carousel-->
 
-  <div class="w3-display-container mySlides">
-    <img src="assets/img/coffee.jpg" style="width:100%">
-    <div class="w3-display-topleft w3-container w3-padding-32">
-      <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/la.jpg" alt="Los Angeles" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/chicago.jpg" alt="Chicago" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/ny.jpg" alt="New York" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>   
+      </div>
     </div>
-  </div>
-  <div class="w3-display-container mySlides">
-    <img src="assets/img/workbench.jpg" style="width:100%">
-    <div class="w3-display-middle w3-container w3-padding-32">
-      <span class="w3-white w3-padding-large w3-animate-bottom">Klorim tipsum</span>
-    </div>
-  </div>
-  <div class="w3-display-container mySlides">
-    <img src="assets/img/sound.jpg" style="width:100%">
-    <div class="w3-display-topright w3-container w3-padding-32">
-      <span class="w3-white w3-padding-large w3-animate-bottom">Blorum pipsum</span>
-    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
   </div>
 
-  <!-- Slideshow next/previous buttons -->
-  <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
-    <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-    <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
-  
-    <div class="w3-center">
-      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    </div>
-  </div>
 
   <!--Fim do Carousel-->
 
@@ -192,23 +199,23 @@
           <div class="w3-row-padding w3-padding-16 w3-center" id="food">
             <div class="w3-quarter">
               <a [routerLink]="['/segmentos']" target="_blank"><img src="assets/img/sandwich.jpg" alt="Sandwich" style="width: 100%"></a>
-              <h4>Área Farmacêutica/ Fisioterápicos</h4>
+              <h5>Área Farmacêutica/ Fisioterápicos</h5>
 
             </div>
             <div class="w3-quarter">
               <img src="assets/img/steak.jpg" alt="Steak" style="width:100%">
               
-              <h4>Área Alimentícia</h4>
+              <h5>Área Alimentícia</h5>
               
             </div>
             <div class="w3-quarter">
               <img src="assets/img/cherries.jpg" alt="Cherries" style="width:100%">
-              <h4>Cosméticos</h4>
+              <h5>Cosméticos</h5>
               
             </div>
             <div class="w3-quarter">
               <img src="assets/img/wine.jpg" alt="Pasta and Wine" style="width:100%">
-              <h4>Química Fina / Biotecnologia</h4>
+              <h5>Química Fina / Biotecnologia</h5>
               
             </div>
           </div>
