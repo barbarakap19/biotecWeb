@@ -18,6 +18,8 @@ import { SegmentosComponent } from './segmentos/segmentos.component';
 import { RouterModule, Routes } from '../../node_modules/@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MatrizEnsaiosComponent } from './matriz-ensaios/matriz-ensaios.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { AreaDeConhecimentoComponent } from './area-de-conhecimento/area-de-conhecimento.component';
 
 const appRoutes: Routes = [
 {
@@ -32,7 +34,9 @@ const appRoutes: Routes = [
     FooterComponent,
     SegmentosComponent,
     HomeComponent,
-    MatrizEnsaiosComponent
+    MatrizEnsaiosComponent,
+    CarouselComponent,
+    AreaDeConhecimentoComponent
   ],
   imports: [
     BrowserModule,
