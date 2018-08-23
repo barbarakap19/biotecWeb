@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { MatrizEnsaiosComponent } from './matriz-ensaios/matriz-ensaios.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AreaDeConhecimentoComponent } from './area-de-conhecimento/area-de-conhecimento.component';
+import { LaboratorioComponent } from './laboratorio/laboratorio.component';
 
 const appRoutes: Routes = [
 {
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     HomeComponent,
     MatrizEnsaiosComponent,
     CarouselComponent,
-    AreaDeConhecimentoComponent
+    AreaDeConhecimentoComponent,
+    LaboratorioComponent
   ],
   imports: [
     BrowserModule,
