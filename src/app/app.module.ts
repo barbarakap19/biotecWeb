@@ -21,6 +21,7 @@ import { MatrizEnsaiosComponent } from './matriz-ensaios/matriz-ensaios.componen
 import { CarouselComponent } from './carousel/carousel.component';
 import { AreaDeConhecimentoComponent } from './area-de-conhecimento/area-de-conhecimento.component';
 import { LaboratorioComponent } from './laboratorio/laboratorio.component';
+import { CadastroLaboratorioComponent } from './cadastro-laboratorio/cadastro-laboratorio.component';
 
 const appRoutes: Routes = [
 {
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     MatrizEnsaiosComponent,
     CarouselComponent,
     AreaDeConhecimentoComponent,
-    LaboratorioComponent
+    LaboratorioComponent,
+    CadastroLaboratorioComponent
   ],
   imports: [
     BrowserModule,
