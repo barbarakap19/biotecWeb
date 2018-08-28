@@ -7,15 +7,8 @@ import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 
-
-
-import {MatButtonModule, MatCheckboxModule, MatCardModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatChipsModule} from '@angular/material';
-
-import 'hammerjs';
-
 import { FooterComponent } from './footer/footer.component';
 import { SegmentosComponent } from './segmentos/segmentos.component';
-import { RouterModule, Routes } from '../../node_modules/@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MatrizEnsaiosComponent } from './matriz-ensaios/matriz-ensaios.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -23,12 +16,6 @@ import { AreaDeConhecimentoComponent } from './area-de-conhecimento/area-de-conh
 import { LaboratorioComponent } from './laboratorio/laboratorio.component';
 import { CadastroLaboratorioComponent } from './cadastro-laboratorio/cadastro-laboratorio.component';
 
-const appRoutes: Routes = [
-{
-  path: 'segmentos', component: SegmentosComponent
-}
-
-];
 
 @NgModule({
   declarations: [
@@ -46,17 +33,7 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
-    FormsModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatCardModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatChipsModule,
-    RouterModule.forRoot(appRoutes)
-    
-    
+    FormsModule
     
   ],
   providers: [],
